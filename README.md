@@ -9,15 +9,14 @@ Usage
 -----
 From [test.js](test.js):
 ```javascript
-var xud = require("xmlunidefuse"), eq = require("assert").strictEqual, raw;
+var xud = require("xmlunidefuse"), eq = require("assert").strictEqual,
+  raw = "<​!-- <u snow=\"man'>☃</u -->";
 
-raw = "<​!-- <u snow=\"man'>☃</u -->";
-eq(xud(raw),
+eq(xud(raw),        //  HTML compat mode:    ...
   "&lt;&#x200B;!-- &lt;u&#xA0;snow=&quot;man&#39;&gt;☃&lt;/u&#x205F;--&gt;");
-                                          // ^^^
-eq(xud.apos(raw),
+
+eq(xud.apos(raw),   //  apos opt-in:         ....
   "&lt;&#x200B;!-- &lt;u&#xA0;snow=&quot;man&apos;&gt;☃&lt;/u&#x205F;--&gt;");
-                                          // ^^^^
 
 //  CDATA encoding is implemented but not recommended,
 //  because it makes the sneaky chars VERY visible.
