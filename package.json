@@ -1,0 +1,40 @@
+{ "name": "xmlunidefuse",
+  "version": "0.1.0",
+  "description": "Encode the predefined XML entities (amp, lt, gt, apos, quot) and some additional, easily overlooked Unicode characters. Opt-out CharRef 39 for HTML.",
+  "keywords": [
+    "apos",
+    "CDATA", "cdata",
+    "CLI", "cli",
+    "defuse",
+    "encode",
+    "entity", "entities",
+    "HTML", "html",
+    "unicode",
+    "univeil",
+    "XML", "xml"
+  ],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/xmlunidefuse-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/xmlunidefuse-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/xmlunidefuse-js/issues"
+  },
+
+  "private": false, "license": "ISC",
+
+  "main": "xmlunidefuse.js",
+  "bin": {
+  },
+  "scripts": { "test": "nodejs test.js" },
+
+  "dependencies": {
+    "univeil": "^0.1.7",
+    "xmldefuse": "^0.1.1"
+  },
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
