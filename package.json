@@ -1,5 +1,5 @@
 { "name": "xmlunidefuse",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Encode the predefined XML entities (amp, lt, gt, apos, quot) and some additional, easily overlooked Unicode characters. Opt-out CharRef 39 for HTML.",
   "keywords": [
     "apos",
@@ -7,6 +7,9 @@
     "CLI", "cli",
     "defuse",
     "encode",
+    "xmlencode",
+    "xmlentities",
+    "htmlspecialchars",
     "entity", "entities",
     "HTML", "html",
     "unicode",
