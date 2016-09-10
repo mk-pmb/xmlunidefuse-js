@@ -16,3 +16,15 @@ eq(xud.apos(raw),   //  apos opt-in:         v...
 eq(xud.cdata(raw),
   '<![CDATA[<]]>&#x200B;<![CDATA[!-- <u]]>&#xA0;<![CDATA[snow="ma' +
   "n'>☃</u]]>&#x205F;<![CDATA[-->]]>");
+
+
+
+
+
+
+
+
+
+
+
+console.log('+OK all tests passed');
